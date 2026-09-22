@@ -1,0 +1,58 @@
+--- Cell 2 ---
+
+--- Cell 4 ---
+So can ho co dien tich lon hon 100 m2: 10
+Gia trung binh cua nhom nay          : 8.96 ty dong
+
+--- Cell 6 ---
+[Biểu đồ hiển thị trong notebook]
+--- NHAN XET BAI TAP 2 ---
+Nhan xet: Gia nha co xu huong tang khi so phong ngu tang lên. Tuy nhien, voi cung mot so phong, gia nha van co su dao dong lon do phu thuoc vao dien tich va tuoi nha.
+
+--- Cell 8 ---
+--- KET QUA BAI TAP 3 ---
+He so goc  w = -0.037858
+He so chan b = 6.983593
+
+Mo hinh: gia = -0.037858 * tuoi_nha + 6.983593
+
+--- NHAN XET VA GIAI THICH DAU CUA W ---
+Nhan xet: He so goc w mang dau AM (w = -0.037858).
+Giai thich: w la muc thay doi cua gia khi tuoi nha tang thêm 1 nam. Dau am noi len quan he nghich bien giua tuoi nha va gia ban: nha cang cu (tuoi nha tang), gia trị hao mon va khau hao cang lon khien gia ban giam xuong (trung binh moi nam tuoi nha tang thêm khien gia giam khoảng 37.9 trieu dong).
+
+
+--- Cell 9 ---
+[Biểu đồ hiển thị trong notebook]
+--- TRA LOI CAU HOI MO RONG ---
+1. Cac diem du lieu KHONG bam sat quanh đường thăng như ở bieu do dien tich. Đam diem phan tan rat rong va tản mạn xung quanh đường hoi quy.
+2. Con so w nay KHONG DANG TIN CAY CAO khi dung mot minh, vi sai so du doan se rat lon.
+3. Mot he so co dau dung VOI LOGIC THUC TE (tuoi nha tang thi gia giam) LA CHUA ĐU de ket luan hai dai luong co quan he chat che. Muon ket luan quan he chat hay khong, can phai xem do phan tan (nhu R2 hoặc RMSE) xem mô hinh co giai thich tot du lieu hay khong.
+
+--- Cell 11 ---
+--- KET QUA BAI TAP 4 ---
+R2 tren tap kiem tra (2 bien: dien_tich, so_phong) : 0.9698
+R2 o Muc 6 (1 bien: dien_tich)                        : 0.9622
+
+--- SO SANH VA NHAN XET ---
+Nhan xet: Chi so R2 tang nhe tu 0.9622 len 0.9698.
+Danh gia: Việc them cot 'so_phong' giup mo hinh tot hon mot chut, tuy nhien muc tang la khong nhieu. Ly do la dien tich da mang phan lon thong tin quyet dinh gia nha, va so phong thuong dong bien chat che voi dien tich.
+
+--- Cell 13 ---
+--- KET QUA BAI TAP 5 ---
+MSE o vong 200 voi toc do hoc lr = 0.001 : 20.2175
+MSE o vong 200 voi toc do hoc lr = 1.02  : 2.9039e+08
+
+--- GIAI THICH NGUYEN NHAN ---
+1. Voi lr = 0.001: Toc do hoc qua nho (buoc di qua ngan). Sau 200 vong, thuat toan van chua kip bo toi day cua ham sai so, do do MSE van con rat cao (chuayeu chua hoan thanh).
+2. Voi lr = 1.02: Toc do hoc qua lon (buoc di qua dai). Thuat toan nhay vọt qua day sang suon ben kia va ngay cang xa day hon, lam sai so phinh to theo cap so nhan (bi phan ky/vơ mô hinh).
+
+--- Cell 15 ---
+--- KET QUA BAI TAP 6 ---
+Can ho  60 m2 -> Gia du doan: 5.104 ty dong
+
+Can ho  80 m2 -> Gia du doan: 6.671 ty dong
+
+  [CANH BAO] Dien tich 200 m2 nam ngoai khoang du lieu hoc (35.5 - 117.5 m2). Ket qua du doan co the khong con dang tin tin cậy!
+Can ho 200 m2 -> Gia du doan: 16.075 ty dong
+
+
