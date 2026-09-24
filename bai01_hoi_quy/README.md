@@ -1,9 +1,15 @@
 # Bài 01: Hồi Quy Tuyến Tính
-Họ và tên: Huỳnh Hữu Phúc <br>
-MSSV: 2474802010314 <br>
-Môn: Học Máy Và Ứng Dụng <br>
-LHP: 261_71ITAI41203_0101 <br>
-GVHD: ThS. Nguyễn Thái Anh (GitHub) <br>
+
+Họ và tên: Huỳnh Hữu Phúc
+
+MSSV: 2474802010314
+
+Môn: Học Máy Và Ứng Dụng
+
+LHP: 261_71ITAI41203_0101
+
+GVHD: ThS. Nguyễn Thái Anh (GitHub)
+
 ---
 
 ## 📌 Giới thiệu dự án
