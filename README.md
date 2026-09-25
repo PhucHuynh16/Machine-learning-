@@ -13,7 +13,7 @@
 
 | Bài | Chủ đề | Thư mục |
 | --- | --- | --- |
-| 01 | Hồi quy tuyến tính (dữ liệu giá nhà) | [01. Linear_Regression](01.%20Linear_Regression/README.md) |
+| 01 | Hồi quy tuyến tính (dữ liệu giá nhà) | [Bai01_Hoi_quy](bai01_hoi_quy/README.md) |
 
 ## Cấu trúc
 
