@@ -1,6 +1,12 @@
 # Bài 02: Hồi Quy Logistic (Logistic Regression) 📈
-> **Môn học:** Học máy và ứng dụng (Machine Learning & Applications)  
-> **Tác giả:** Huỳnh Hữu Phúc — **MSSV:** 2474802010314
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat-square) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) ![Jupyter Notebook](https://img.shields.io/badge/Jupyter_Notebook-F37626?style=flat-square&logo=jupyter&logoColor=white)
+
+
+* **Họ và tên:** Huỳnh Hữu Phúc
+* **MSSV:** 2474802010314
+* **Môn:** Học Máy Và Ứng Dụng
+* **LHP:** 261_71ITAI41203_0101
+* **GVHD:** ThS. Nguyễn Thái Anh ([GitHub](https://github.com/AnhNguyenVLU))
 
 ---
 
