@@ -1,0 +1,112 @@
+--- Cell 2 ---
+Kich thuoc bang (so dong, so cot): (120, 3)
+
+Nam dong dau tien:
+   gio_on  diem_giua_ky  qua_mon
+0     5.5           3.0        0
+1    19.0           6.0        1
+2    14.0           7.7        0
+3    11.0           3.1        0
+4    10.5           5.8        1
+
+So sinh vien theo ket qua:
+qua_mon
+1    71
+0    49
+Name: count, dtype: int64
+
+
+Ty le qua mon: 0.5917
+So gio on trung binh theo nhom:
+qua_mon
+0     8.29
+1    19.89
+Name: gio_on, dtype: float64
+
+--- Cell 4 ---
+Bang gia tri cua ham sigmoid
+ z        sigmoid(z)
+ -6        0.0025
+ -4        0.0180
+ -2        0.1192
+ -1        0.2689
+  0        0.5000
+  1        0.7311
+  2        0.8808
+  4        0.9820
+  6        0.9975
+
+Kiem tra sigmoid(-z) = 1 - sigmoid(z):
+  z = 1.0: 0.268941 va 0.268941
+  z = 2.5: 0.075858 va 0.075858
+  z = 3.7: 0.024127 va 0.024127
+
+Mo hinh gia dinh: w = 0.4, b = -5.0
+  So gio on    z = w*x + b    Xac suat qua mon
+    5.0         -3.00        0.0474
+   10.0         -1.00        0.2689
+   12.5          0.00        0.5000
+   15.0          1.00        0.7311
+   20.0          3.00        0.9526
+   25.0          5.00        0.9933
+
+--- Cell 6 ---
+He so goc w = 0.392819
+He so chan b = -5.064890
+
+So gio on ung voi xac suat 0.5: 12.89 gio
+
+Du doan cho nam ban moi:
+  So gio on    Xac suat qua    Nhan mo hinh dua ra
+    5.0        0.0431          0
+   10.0        0.2429          0
+   13.0        0.5104          1
+   20.0        0.9422          1
+   28.0        0.9974          1
+
+--- Cell 8 ---
+So sinh vien de hoc : 90
+So sinh vien de kiem tra: 30
+
+Ma tran nham lan
+  TN =  9   doan rot, that su rot
+  FP =  3   doan qua, that ra rot
+  FN =  1   doan rot, that ra qua
+  TP = 17   doan qua, that su qua
+
+Accuracy  = 0.8667
+Precision = 0.8500
+Recall    = 0.9444
+F1        = 0.8947
+
+Tu tinh lai bang cong thuc:
+  Accuracy  = (17 + 9) / 30 = 0.8667
+  Precision = 17 / (17 + 3) = 0.8500
+  Recall    = 17 / (17 + 1) = 0.9444
+
+--- Cell 10 ---
+Nguong  So ban bi doan la qua  Precision  Recall
+  0.2    24                    0.7500     1.0000
+  0.3    20                    0.8500     0.9444
+  0.4    20                    0.8500     0.9444
+  0.5    20                    0.8500     0.9444
+  0.6    16                    1.0000     0.8889
+  0.7    15                    1.0000     0.8333
+  0.8    13                    1.0000     0.7222
+
+Doc bang tren tu duoi len:
+  Nguong cang cao thi mo hinh cang kho tinh,
+  precision tang nhung recall giam. Nguong thap thi nguoc lai.
+
+--- Cell 12 ---
+Mot bien: accuracy tren tap kiem tra = 0.8667
+Hai bien: accuracy tren tap kiem tra = 0.9000
+
+He so cua tung bien:
+  gio_on         +0.3035
+  diem_giua_ky   +0.5885
+  he so chan     -6.9811
+
+Ca hai he so deu duong, nghia la on nhieu hon va
+diem giua ky cao hon deu lam tang xac suat qua mon.
+

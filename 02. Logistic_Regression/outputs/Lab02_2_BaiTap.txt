@@ -1,0 +1,73 @@
+--- Cell 2 ---
+   gio_on  diem_giua_ky  qua_mon
+0     5.5           3.0        0
+1    19.0           6.0        1
+2    14.0           7.7        0
+3    11.0           3.1        0
+4    10.5           5.8        1
+
+--- Cell 4 ---
+So ban co diem giua ky >= 7      : 31
+Ty le qua mon cua nhom do        : 0.9032
+Ty le qua mon cua nhom con lai   : 0.4831
+
+--- Cell 6 ---
+[Biểu đồ hiển thị trong notebook]
+Da luu do thi vao tep sigmoid.png
+
+--- Cell 8 ---
+Mo hinh: w = 0.392819, b = -5.064890
+Du doan:
+    3.00 gio:  z = -3.8864   xac suat qua = 0.0201   nhan = 0
+    8.00 gio:  z = -1.9223   xac suat qua = 0.1276   nhan = 0
+   12.89 gio:  z = -0.0015   xac suat qua = 0.4996   nhan = 0
+   18.00 gio:  z = +2.0059   xac suat qua = 0.8814   nhan = 1
+   26.00 gio:  z = +5.1484   xac suat qua = 0.9942   nhan = 1
+
+--- Cell 10 ---
+TP = 17, TN = 9, FP = 3, FN = 1
+
+Tu tinh:
+  Accuracy  = (17 + 9) / 30 = 0.8667
+  Precision = 17 / (17 + 3) = 0.8500
+  Recall    = 17 / (17 + 1) = 0.9444
+  F1        = 2 * 0.8500 * 0.9444 / (0.8500 + 0.9444) = 0.8947
+
+Doi chieu voi scikit-learn: KHOP
+
+--- Cell 13 ---
+Nguong   F1
+  0.05   0.7826
+  0.10   0.8182
+  0.15   0.8182
+  0.20   0.8571
+  0.25   0.9000
+  0.30   0.8947
+  0.35   0.8947
+  0.40   0.8947
+  0.45   0.8947
+  0.50   0.8947
+  0.55   0.8889
+  0.60   0.9412
+  0.65   0.9412
+  0.70   0.9091
+  0.75   0.8750
+  0.80   0.8387
+  0.85   0.8000
+  0.90   0.5600
+  0.95   0.4348
+
+Nguong cho F1 cao nhat: 0.60 (F1 = 0.9412)
+
+--- Cell 15 ---
+Lop duong = qua mon (lop 1):
+  Precision = 0.8500
+  Recall    = 0.9444
+
+Lop duong = rot mon (lop 0):
+  Precision = 0.9000
+  Recall    = 0.7500
+
+Lop 1 la duong: precision = 17/(17+3), recall = 17/(17+1)
+Lop 0 la duong: precision = 9/(9+1), recall = 9/(9+3)
+

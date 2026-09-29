@@ -14,6 +14,7 @@
 | Bài | Chủ đề | Thư mục |
 | --- | --- | --- |
 | 01 | Hồi quy tuyến tính (dữ liệu giá nhà) | [Bai01_Hoi_quy](bai01_hoi_quy/README.md) |
+| 02 | Hồi quy logistic | [02. Logistic_Regression](02.%20Logistic_Regression/README.md) |
 
 ## Cấu trúc
 
