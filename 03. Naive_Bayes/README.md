@@ -1,8 +1,11 @@
 # Lab 03: Naive Bayes
+Python NumPy Pandas Matplotlib scikit-learn Jupyter Notebook
 
-- **Môn học:** Học máy và ứng dụng
-- **Sinh viên:** Huỳnh Hữu Phúc
-- **MSSV:** 2474802010314
+Họ và tên: Huỳnh Hữu Phúc
+MSSV: 2474802010314
+Môn: Học Máy Và Ứng Dụng
+LHP: 261_71ITAI41203_0101
+GVHD: ThS. Nguyễn Thái Anh (GitHub)
 
 ## Nội dung
 
