@@ -15,6 +15,7 @@
 | --- | --- | --- |
 | 01 | Hồi quy tuyến tính (dữ liệu giá nhà) | [01. Linear_Regression](01.%20Linear_Regression/README.md) |
 | 02 | Hồi quy logistic | [02. Logistic_Regression](02.%20Logistic_Regression/README.md) |
+| 03 | Naive Bayes | [03. Naive_Bayes](03.%20Naive_Bayes/README.md) |
 
 ## Cấu trúc
 
@@ -27,14 +28,22 @@ Machine-Learning/
 │   ├── outputs/        # Nhật ký kết quả
 │   ├── scripts/        # run_all.py
 │   └── requirements.txt
+├── 02. Logistic_Regression/
+│   └── README.md
+├── 03. Naive_Bayes/
+│   ├── code/           # 5 bước thực hành và 6 bài tập
+│   ├── data/           # tin_nhan.csv, sinh_vien.csv
+│   ├── outputs/        # Nhật ký kết quả
+│   ├── scripts/        # run_all.py
+│   └── requirements.txt
 └── README.md
 ```
 
 ## Cách chạy
 
 ```sh
-git clone https://github.com/huyryan220806/Machine-Learning.git
-cd "Machine-Learning/01. Linear_Regression"
+git clone https://github.com/PhucHuynh16/Machine-learning-.git
+cd "Machine-learning-/03. Naive_Bayes"
 python -m pip install -r requirements.txt
 python scripts/run_all.py
 ```

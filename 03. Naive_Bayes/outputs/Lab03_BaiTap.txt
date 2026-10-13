@@ -1,0 +1,66 @@
+--- Cell 3 ---
+P(qua mon) = 0.7450
+P(Hoc deu | qua mon) = 0.6376
+P(Hoc don | qua mon) = 0.2819
+P(It hoc | qua mon) = 0.0805
+Tong ba xac suat = 1.0000
+
+--- Cell 6 ---
+5 tu cho thay tin rac manh nhat (chenh log duong):
+   tu  log(P_rac/P_thuong)
+  mãi             3.203435
+  tay             2.905600
+ ngay             2.661837
+ miễn             2.479516
+trúng             2.374155
+
+5 tu cho thay tin thuong manh nhat (chenh log am):
+   tu  log(P_rac/P_thuong)
+  lớp            -2.612187
+   em            -2.561756
+  bài            -2.294553
+  báo            -2.274074
+phòng            -2.274074
+Nhan xet: do chenh duong nghieng ve rac; am nghieng ve thuong.
+
+--- Cell 9 ---
+   alpha   accuracy  precision   recall
+   0.001     0.9467     1.0000   0.8667
+   0.100     0.9467     1.0000   0.8667
+   1.000     0.9467     1.0000   0.8667
+  10.000     0.9467     1.0000   0.8667
+ 100.000     0.9467     1.0000   0.8667
+Nhan xet: trong 5 muc alpha tren, ba chi so tren tap test khong doi.
+Ve nguyen tac, alpha rat lon keo xac suat tu cua hai lop lai gan nhau;
+khi do bang chung tu yeu va prior lop thuong chi phoi nhieu hon.
+
+--- Cell 12 ---
+So mau train/test: 225/75
+So tu trong tu dien tu viet: 40
+So tu trong tu dien thu vien: 40
+Accuracy tu viet: 0.9467
+Accuracy MultinomialNB: 0.9467
+So du doan khac nhau: 0
+Giai thich: hai cach dung cung train/test, quy tac tach tu, prior, alpha=1
+va bo qua tu ngoai tu dien. Cong log tranh tran duoi khi tin dai.
+
+--- Cell 15 ---
+MultinomialNB: accuracy = 0.8000
+GaussianNB: accuracy = 0.9000
+Chuong trinh khong bao loi vi cac gia tri deu khong am.
+Tuy nhien gio on va diem giua ky la so lien tuc, khong phai so dem tu.
+Do do dung MultinomialNB la sai gia dinh phan phoi du mo hinh van chay.
+
+--- Cell 18 ---
+So tin tung lop trong bo du lieu moi:
+la_rac
+0    180
+1     20
+Name: count, dtype: int64
+Prior lop rac trong tap hoc = 0.1000
+Ma tran: TN=45, FP=0, FN=1, TP=4
+Accuracy = 0.9800
+Recall lop rac = 0.8000
+Moc doan tat ca la thuong: accuracy = 0.9000, recall rac = 0.0000
+Nhan xet: accuracy de gay ao tuong tot khi 90% tin la thuong.
+Can xem recall va FN de biet bo loc bo sot bao nhieu tin rac.

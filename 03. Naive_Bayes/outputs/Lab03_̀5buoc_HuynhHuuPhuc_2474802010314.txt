@@ -1,0 +1,150 @@
+--- Cell 3 ---
+Vi du 1: xet nghiem benh
+ Ty le mac benh 1 phan tram, xet nghiem dung 99 phan tram.
+ Duong tinh thi kha nang co benh that = 0.5000
+
+Cung xet nghiem do, doi ty le mac benh:
+ Ty le mac benh Hau nghiem khi duong tinh
+  0.001 0.0902
+  0.010 0.5000
+  0.050 0.8390
+  0.100 0.9167
+  0.500 0.9900
+
+Vi du 2: hai day chuyen san xuat
+ Day A lam 80 phan tram san pham, ty le loi 1 phan tram.
+ Day B lam 20 phan tram, ty le loi 5 phan tram.
+ Nhat duoc san pham loi, kha nang no tu day B = 0.5556
+
+Kiem lai bang cach dem tren 1000 san pham:
+ Day A: 800 san pham, 8 cai loi
+ Day B: 200 san pham, 10 cai loi
+ Ty le tu day B = 10.0 / 18.0 = 0.5556
+
+--- Cell 6 ---
+Kich thuoc bang: (300, 2)
+
+So tin theo nhan (1 la rac, 0 la thuong):
+la_rac
+0    180
+1    120
+Name: count, dtype: int64
+
+Ty le tin rac: 0.4
+
+Ba tin nhan dau tien:
+ [0] cáo gửi cáo thầy nhóm cáo gửi có cho
+ [1] miễn giảm ngay hạn miễn tay nhé thưởng cho nhanh
+ [0] cho bạn mai gửi nhóm bài chiều
+
+Kich thuoc bang dem tu: (300, 40)
+So tu trong tu dien: 40
+
+Muoi tu xuat hien nhieu nhat trong tin rac:
+       thuong  rac
+tay         3   48
+ngay        4   47
+nhanh       9   44
+chót        6   43
+giảm        6   42
+lúc        39   42
+quà         8   41
+click       5   40
+phí         6   40
+miễn        4   39
+
+Muoi tu xuat hien nhieu nhat trong tin thuong:
+       thuong  rac
+thầy       74    7
+bài        73    4
+cáo        72    8
+chiều      68    8
+ạ          65    7
+tài        64   11
+tập        63    6
+gửi        61   10
+lớp        60    2
+nhóm       58    7
+
+--- Cell 9 ---
+So tin de hoc : 225
+So tin de kiem tra: 75
+
+Ma tran nham lan
+ TN = 45 thu thuong duoc giu dung
+ FP =  0 thu thuong bi xoa nham
+ FN =  4 thu rac lot luoi
+ TP = 26 thu rac bi chan dung
+
+Accuracy = 0.9467
+Precision = 1.0000
+Recall = 0.8667
+
+Thu tren ba tin nhan tu go:
+ [RAC   ] p = 0.9992 <- trung thuong khuyen mai nhanh tay click ngay
+ [thuong] p = 0.0983 <- hop nhom bao cao chieu mai phong 305
+ [thuong] p = 0.0719 <- ban gui giup em tai lieu bai tap nhe
+
+--- Cell 12 ---
+Tu dien co 18 tu:
+ bai chieu click gia giam gui hop khuyen lieu
+ mai ngay nhom nop tai tap thay thuong trung
+
+So lan xuat hien cua tung tu
+ tu             rac  thuong
+ bai              0       1
+ chieu            0       1
+ click            1       0
+ gia              1       0
+ giam             1       0
+ gui              0       1
+ hop              0       1
+ khuyen           1       0
+ lieu             0       1
+ mai              1       2
+ ngay             1       0
+ nhom             0       2
+ nop              0       1
+ tai              0       1
+ tap              0       1
+ thay             0       1
+ thuong           2       0
+ trung            2       0
+
+Tin nhan thu: "trung thuong bai tap"
+Tu 'bai' chi xuat hien o lop thuong, chua bao gio o lop rac.
+
+alpha = 0.0
+ diem lop rac = 0.0000000000
+ diem lop thuong = 0.0000000000
+ ket luan = thuong
+
+alpha = 1.0
+ diem lop rac = 0.0000073212
+ diem lop thuong = 0.0000021656
+ ket luan = rac
+
+Khong lam tron, CA HAI diem deu bang 0 nen mo hinh te liet.
+Lop rac bang 0 vi tu 'bai' chua tung xuat hien o lop rac.
+Lop thuong bang 0 vi tu 'trung' chua tung xuat hien o lop thuong.
+Co lam tron, diem lop rac lon hon va mo hinh ket luan dung.
+
+--- Cell 15 ---
+Naive Bayes : accuracy = 0.9000
+Hoi quy logistic: accuracy = 0.9000
+
+Nhung gi Naive Bayes hoc duoc
+                      gio_on   diem_giua_ky
+ Lop 0 (rot)  trung binh       8.18           3.99
+              do lech       5.29           1.92
+ Lop 1 (qua)  trung binh      20.03           6.70
+              do lech       5.81           1.50
+
+Ty le tung lop trong tap hoc: 0.4111, 0.5889
+
+Du doan cho bon ban moi:
+   gio on   diem GK   P(qua mon)
+        5       4.0       0.0137
+       13       6.0       0.6550
+       20       7.0       0.9855
+       28       9.0       0.9999

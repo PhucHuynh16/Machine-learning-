@@ -1,0 +1,12 @@
+# Phân tích dữ liệu và mô hình trong hai notebook
+pandas>=2.0
+scikit-learn>=1.3
+
+# Mở và chạy notebook trên Jupyter
+notebook>=7.0
+ipykernel>=6.0
+
+# Chạy tự động bằng scripts/run_all.py
+nbformat>=5.0
+nbclient>=0.8
+jupyter-client>=8.0
