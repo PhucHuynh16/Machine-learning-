@@ -1,0 +1,58 @@
+--- Cell 3 ---
+Accuracy KNN tu viet       : 0.9200
+Accuracy scikit-learn      : 0.9200
+So du doan khac nhau       : 0
+
+--- Cell 6 ---
+Khoang cach      k tot   CV trung binh   test accuracy
+Euclid          13        0.8667          0.9200
+Manhattan       27        0.8667          0.9067
+
+--- Cell 9 ---
+Khong chuan hoa, don vi nghin dong : 0.5333
+Khong chuan hoa, don vi trieu dong : 0.8667
+Co chuan hoa, don vi nghin dong    : 0.8667
+Co chuan hoa, don vi trieu dong    : 0.8667
+
+--- Cell 12 ---
+  k   weights     tap hoc   tap kiem tra
+  1   uniform       1.0000        0.8000
+  1   distance      1.0000        0.8000
+ 13   uniform       0.8844        0.9200
+ 13   distance      1.0000        0.9333
+101   uniform       0.8311        0.8533
+101   distance      1.0000        0.9067
+
+--- Cell 15 ---
+MAE kiem dinh cheo theo k
+  k =  1  MAE = 0.4164
+  k =  2  MAE = 0.3498  <- tot nhat
+  k =  3  MAE = 0.3714
+  k =  4  MAE = 0.3618
+  k =  5  MAE = 0.3816
+  k =  6  MAE = 0.4002
+  k =  7  MAE = 0.3990
+  k =  8  MAE = 0.4098
+  k =  9  MAE = 0.4171
+  k = 10  MAE = 0.4365
+  k = 11  MAE = 0.4500
+  k = 12  MAE = 0.4695
+  k = 13  MAE = 0.4992
+  k = 14  MAE = 0.5153
+  k = 15  MAE = 0.5290
+  k = 16  MAE = 0.5595
+  k = 17  MAE = 0.5748
+  k = 18  MAE = 0.5891
+  k = 19  MAE = 0.6130
+  k = 20  MAE = 0.6254
+
+k tot nhat                     : 2
+MAE KNN tren tap kiem tra      : 0.4867
+MAE duong thang tren kiem tra  : 0.2578
+
+--- Cell 18 ---
+ so_mau_hoc  so_mau_du_doan fit_giay predict_giay  tong_nhan_1
+       1000            1000 0.000458     0.048403          553
+      10000            1000 0.002547     0.084627          501
+     100000            1000 0.014174     0.478887          496
+

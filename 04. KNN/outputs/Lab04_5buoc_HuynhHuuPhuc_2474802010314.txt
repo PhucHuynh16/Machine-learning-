@@ -1,0 +1,69 @@
+--- Cell 3 ---
+Khoang cach KHI CHUA chuan hoa
+  d(A, B) =    102.2
+  d(A, C) =   3000.0
+
+Do lech chuan cua ba cot:
+  gio_on 7.82   diem_giua_ky 2.09   chi_tieu 1692
+
+Khoang cach SAU KHI chuan hoa
+  d(A, B) = 3.85
+  d(A, C) = 1.79
+
+Ban moi: on 12 gio, diem giua ky 6.5
+Nam lang gieng gan nhat:
+  gio  10.5  diem  6.4  khoang cach 0.198 -> qua
+  gio  12.5  diem  6.1  khoang cach 0.202 -> qua
+  gio  14.0  diem  6.4  khoang cach 0.260 -> qua
+  gio   9.5  diem  6.1  khoang cach 0.373 -> rot
+  gio  10.5  diem  5.8  khoang cach 0.386 -> qua
+Bo phieu: 4 qua, 1 rot
+Du doan: qua mon
+
+--- Cell 6 ---
+Doan bua ca lop qua            : 0.6000
+Ba cot, khong chuan hoa        : 0.5333
+Ba cot, co chuan hoa           : 0.8667
+Bo cot chi_tieu, co chuan hoa  : 0.9000
+
+--- Cell 9 ---
+Accuracy tren tap hoc va tap kiem tra theo k
+  k    tap hoc   tap kiem tra
+  1     1.0000       0.8000
+  5     0.8756       0.9067
+ 13     0.8844       0.9200
+ 31     0.8667       0.8933
+101     0.8311       0.8533
+
+Kiem dinh cheo 5 phan tren tap hoc:
+  k =  1  diem trung binh 0.7778
+  k =  5  diem trung binh 0.8444
+  k =  9  diem trung binh 0.8444
+  k = 13  diem trung binh 0.8667  <- tot nhat
+  k = 17  diem trung binh 0.8533
+  k = 25  diem trung binh 0.8622
+  k = 51  diem trung binh 0.8533
+
+k tot nhat = 13
+Accuracy tren tap kiem tra = 0.9200
+
+--- Cell 12 ---
+Accuracy tren tap kiem tra, bo hai vang trang
+  Hoi quy logistic: 0.8533
+  Naive Bayes     : 0.8533
+  KNN, k = 13     : 0.9200
+
+--- Cell 15 ---
+MAE tren tap kiem tra (ty dong)
+  KNN, k = 5  : 0.4030
+  Duong thang : 0.2578
+
+Du doan cho bon can moi (ty dong)
+  dien tich    KNN   duong thang
+        60 m2    4.95        5.12
+       100 m2    8.32        8.24
+       150 m2    9.32       12.13
+       250 m2    9.32       19.91
+
+Nam lang gieng cua can 250 m2: 117.5, 115.9, 111.7, 111.2, 104.2
+

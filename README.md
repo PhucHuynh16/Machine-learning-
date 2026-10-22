@@ -16,6 +16,7 @@
 | 01 | Hồi quy tuyến tính (dữ liệu giá nhà) | [01. Linear_Regression](01.%20Linear_Regression/README.md) |
 | 02 | Hồi quy logistic | [02. Logistic_Regression](02.%20Logistic_Regression/README.md) |
 | 03 | Naive Bayes | [03. Naive_Bayes](03.%20Naive_Bayes/README.md) |
+| 04 | K láng giềng gần nhất (KNN) | [04. KNN](04.%20KNN/README.md) |
 
 ## Cấu trúc
 
@@ -36,6 +37,14 @@ Machine-Learning/
 │   ├── outputs/        # Nhật ký kết quả
 │   ├── scripts/        # run_all.py
 │   └── requirements.txt
+├── 04. KNN/
+│   ├── code/           # 5 bước thực hành và 6 bài tập
+│   ├── data/           # 3 bộ dữ liệu CSV
+│   ├── figures/
+│   ├── outputs/        # Nhật ký kết quả
+│   ├── scripts/        # run_all.py
+│   ├── README.md
+│   └── requirements.txt
 └── README.md
 ```
 
@@ -43,7 +52,7 @@ Machine-Learning/
 
 ```sh
 git clone https://github.com/PhucHuynh16/Machine-learning-.git
-cd "Machine-learning-/03. Naive_Bayes"
+cd "Machine-learning-/04. KNN"
 python -m pip install -r requirements.txt
 python scripts/run_all.py
 ```

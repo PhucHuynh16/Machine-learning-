@@ -1,0 +1,13 @@
+# Phan tich du lieu va mo hinh trong hai notebook
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.3
+
+# Mo va chay notebook tren Jupyter
+notebook>=7.0
+ipykernel>=6.0
+
+# Chay tu dong bang scripts/run_all.py
+nbformat>=5.0
+nbclient>=0.8
+jupyter-client>=8.0
