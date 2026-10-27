@@ -17,6 +17,7 @@
 | 02 | Hồi quy logistic | [02. Logistic_Regression](02.%20Logistic_Regression/README.md) |
 | 03 | Naive Bayes | [03. Naive_Bayes](03.%20Naive_Bayes/README.md) |
 | 04 | K láng giềng gần nhất (KNN) | [04. KNN](04.%20KNN/README.md) |
+| 05 | Cây quyết định và Rừng ngẫu nhiên | [05. CayQuyetDinh_RungNgauNhien](05.%20CayQuyetDinh_RungNgauNhien/README.md) |
 
 ## Cấu trúc
 
@@ -45,6 +46,14 @@ Machine-Learning/
 │   ├── scripts/        # run_all.py
 │   ├── README.md
 │   └── requirements.txt
+├── 05. CayQuyetDinh_RungNgauNhien/
+│   ├── code/           # 7 bước thực hành và 6 bài tập
+│   ├── data/           # khach_vay.csv, gia_nha.csv
+│   ├── figures/        # Cây năm lá và cây sâu 2
+│   ├── outputs/        # Nhật ký kết quả
+│   ├── scripts/        # run_all.py
+│   ├── README.md
+│   └── requirements.txt
 └── README.md
 ```
 
@@ -52,7 +61,7 @@ Machine-Learning/
 
 ```sh
 git clone https://github.com/PhucHuynh16/Machine-learning-.git
-cd "Machine-learning-/04. KNN"
+cd "Machine-learning-/05. CayQuyetDinh_RungNgauNhien"
 python -m pip install -r requirements.txt
 python scripts/run_all.py
 ```
