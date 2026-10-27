@@ -1,0 +1,12 @@
+# Khuyen nghi Python 3.11; phien ban scikit-learn da doi chieu voi PDF.
+numpy>=1.26,<3
+pandas>=2.0,<4
+scipy>=1.11,<2
+scikit-learn==1.5.2
+matplotlib>=3.8,<4
+
+# Mo, chay va luu notebook trong Jupyter / VS Code.
+notebook>=7.0,<8
+ipykernel>=6.29,<8
+nbformat>=5.10,<6
+nbclient>=0.10,<1

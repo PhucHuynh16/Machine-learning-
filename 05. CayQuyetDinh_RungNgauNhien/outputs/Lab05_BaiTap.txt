@@ -1,0 +1,111 @@
+--- Cell 3 ---
+
+--- Cell 5 ---
+[Biểu đồ hiển thị trong notebook]
+[Biểu đồ hiển thị trong notebook]
+|--- thu_nhap <= 15.050
+|   |--- ty_le_no <= 0.615
+|   |   |--- weights: [68.000, 53.000] class: 0
+|   |--- ty_le_no >  0.615
+|   |   |--- weights: [114.000, 14.000] class: 0
+|--- thu_nhap >  15.050
+|   |--- ty_le_no <= 1.020
+|   |   |--- weights: [27.000, 145.000] class: 1
+|   |--- ty_le_no >  1.020
+|   |   |--- weights: [20.000, 9.000] class: 0
+
+Hai la ben trai:
+  Nut 2: samples=121, Gini=0.4923, class=0
+  Nut 3: samples=128, Gini=0.1948, class=0
+Gini truoc chia: 0.3933; sau chia: 0.3394; giam: 0.0540
+Da luu figures/cay_nam_la.png va figures/cay_sau_2.png
+
+--- Cell 8 ---
+So mau train: 450; so mau test giu rieng: 150
+Tu tinh: thu_nhap <= 15.05000
+Gini goc: 0.499842; sau chia: 0.377697; giam: 0.122145
+Hai nhanh co 249 va 201 khach
+scikit-learn: thu_nhap <= 15.05000
+Trung ket qua: True
+
+--- Cell 11 ---
+
+Tieu chi: gini
+Cay tu do: do sau=13, so la=92, train=1.0000, test=0.7667
+Do sau   tap hoc   kiem dinh cheo
+     1   0.7467    0.7244
+     2   0.7711    0.7378
+     3   0.8000    0.7511
+     4   0.8644    0.8089
+     5   0.8978    0.8333
+     6   0.9133    0.8156
+     7   0.9400    0.8067
+     8   0.9600    0.7733
+     9   0.9800    0.7800
+    10   0.9911    0.7822
+    11   0.9933    0.7756
+    12   0.9978    0.7778
+    13   1.0000    0.7733
+    14   1.0000    0.7733
+    15   1.0000    0.7733
+
+Tieu chi: entropy
+Cay tu do: do sau=13, so la=88, train=1.0000, test=0.7667
+Do sau   tap hoc   kiem dinh cheo
+     1   0.7467    0.7244
+     2   0.7711    0.7133
+     3   0.7733    0.7489
+     4   0.8511    0.8111
+     5   0.8956    0.8222
+     6   0.9111    0.8222
+     7   0.9378    0.8089
+     8   0.9533    0.7933
+     9   0.9778    0.7844
+    10   0.9867    0.7978
+    11   0.9933    0.7911
+    12   0.9978    0.7822
+    13   1.0000    0.7822
+    14   1.0000    0.7822
+    15   1.0000    0.7867
+
+So sanh sau khi chon do sau bang CV:
+criterion  max_depth     CV  so_la  test_accuracy
+     gini          5 0.8333     27         0.8533
+  entropy          5 0.8222     23         0.8467
+
+--- Cell 14 ---
+min_samples_leaf   tap hoc   kiem dinh cheo
+               1   1.0000    0.7733
+               2   0.9467    0.7822
+               5   0.8956    0.8067
+              10   0.8600    0.8089
+              20   0.8422    0.8089
+              40   0.7822    0.7133
+
+Chon min_samples_leaf=10 bang CV=0.8089
+Cay chon: do sau=8, so la=30, test=0.8467
+Cay max_depth=5: do sau=5, so la=27, test=0.8533
+Chenh accuracy (min_samples_leaf - max_depth): -0.0067
+
+--- Cell 17 ---
+Accuracy test cua rung co cot ngau nhien: 0.9067
+Do quan trong giam dan theo permutation (don vi: muc giam accuracy):
+                      MDI  permutation_mean  permutation_std  hang_MDI  hang_permutation
+thu_nhap           0.4269            0.3073           0.0242         1                 1
+ty_le_no           0.2696            0.1993           0.0357         2                 2
+co_viec_on_dinh    0.0773            0.1117           0.0155         4                 3
+so_nguoi_phu_thuoc 0.0764            0.0497           0.0199         5                 4
+so_ngau_nhien      0.1499            0.0017           0.0111         3                 5
+Cot ngau nhien: hang MDI=3, hang permutation=5
+
+--- Cell 20 ---
+Train: 48; test: 12; dien tich train toi da: 117.5 m2
+Mo hinh             MAE test (ty dong)    Gia 150 m2    Gia 250 m2
+Cay sau 3                       0.5039        9.4025        9.4025
+Duong thang                     0.2578       12.1303       19.9139
+Rung 200 cay                    0.4559        9.1973        9.1973
+
+Trung binh 200 du doan la cho can 250 m2: 9.197250
+Du doan tung cay nam trong [8.5233, 9.7400] ty dong
+Rung cho cung gia tai 150 va 250 m2: True
+
