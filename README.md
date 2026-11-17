@@ -18,6 +18,7 @@
 | 03 | Naive Bayes | [03. Naive_Bayes](03.%20Naive_Bayes/README.md) |
 | 04 | K láng giềng gần nhất (KNN) | [04. KNN](04.%20KNN/README.md) |
 | 05 | Cây quyết định và Rừng ngẫu nhiên | [05. CayQuyetDinh_RungNgauNhien](05.%20CayQuyetDinh_RungNgauNhien/README.md) |
+| 06 | Máy vectơ hỗ trợ (SVM) | [06. SVM](06.%20SVM/README.md) |
 
 ## Cấu trúc
 
@@ -54,6 +55,14 @@ Machine-Learning/
 │   ├── scripts/        # run_all.py
 │   ├── README.md
 │   └── requirements.txt
+├── 06. SVM/
+│   ├── code/           # 5 bước thực hành và 6 bài tập
+│   ├── data/           # 3 bộ dữ liệu CSV
+│   ├── figures/        # Ảnh các chữ số dự đoán sai
+│   ├── outputs/        # Nhật ký kết quả
+│   ├── scripts/        # run_all.py
+│   ├── README.md
+│   └── requirements.txt
 └── README.md
 ```
 
@@ -61,7 +70,7 @@ Machine-Learning/
 
 ```sh
 git clone https://github.com/PhucHuynh16/Machine-learning-.git
-cd "Machine-learning-/05. CayQuyetDinh_RungNgauNhien"
+cd "Machine-learning-/06. SVM"
 python -m pip install -r requirements.txt
 python scripts/run_all.py
 ```

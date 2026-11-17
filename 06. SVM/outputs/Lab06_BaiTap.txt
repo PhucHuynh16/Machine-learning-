@@ -1,0 +1,91 @@
+--- Cell 3 ---
+1. TINH TAY VOI HE SO IN RA O MUC 2 (w1=-0.831, w2=-0.355, b=4.820):
+   Do dai ||w|| = 0.9037, Do rong le = 2.2132
+   Mot nua do rong le = 1.1066
+   Diem (3.0, 3.0): f(x) = +1.262, khoang cach = 1.3966, doan lop 1
+   Diem (5.0, 4.5): f(x) = -0.932, khoang cach = 1.0319, doan lop 0
+
+2. TINH TAY VOI HE SO CHINH XAC CUA MO HINH:
+   Diem (3.0, 3.0): f(x) = +1.262, khoang cach = 1.3958
+   Diem (5.0, 4.5): f(x) = -0.933, khoang cach = 1.0325
+
+   Khoang cach cua 3 vecto ho tro:
+   Vecto HT diem 18 (5.20, 4.22), lop 0: f(x) = -1.000, khoang cach = 1.1064
+   Vecto HT diem 10 (2.88, 4.02), lop 1: f(x) = +1.000, khoang cach = 1.1062
+   Vecto HT diem 13 (3.59, 2.36), lop 1: f(x) = +1.000, khoang cach = 1.1065
+
+   Mot nua do rong le = (2 / ||w||) / 2 = 1 / ||w|| = 1.1063
+
+--- Cell 6 ---
+0. Mo hinh goc (24 diem):
+   w1 = -0.831, w2 = -0.355, b = 4.820
+   Do rong le = 2.2126, Chi so vecto HT: [18 10 13]
+
+1. Lan 1 - Them diem lop 1 tai (-1, -1):
+   f(-1, -1) tren mo hinh goc = +6.007 (nam xa ngoai le ve phia lop 1)
+   w1 = -0.831, w2 = -0.355, b = 4.820
+   Do rong le = 2.2126, Chi so vecto HT: [18 10 13]
+
+2. Lan 2 - Thay bang diem lop 1 tai (4.5, 4):
+   f(4.5, 4) tren mo hinh goc = -0.340 (nam trong le va lan sang phia lop 0)
+   w1 = -2.603, w2 = -0.807, b = 15.941
+   Do rong le = 0.7339, Chi so vecto HT: [18 24]
+
+--- Cell 9 ---
+Ket qua GridSearchCV (cv=5) cho SVM Kernel Da thuc (co StandardScaler):
+Bac (degree)   svc__C tot nhat    Diem CV      Accuracy Test  
+------------------------------------------------------------
+2              1                  0.5422       0.5067         
+3              1                  0.8178       0.8267         
+4              100                0.5156       0.4800         
+
+--- Cell 12 ---
+Diem kiem dinh cheo luoi min, hang la C, cot la gamma:
+gamma     0.3     1.0     3.0
+C                            
+3      0.8533  0.8711  0.8667
+10     0.8489  0.8711  0.8667
+30     0.8622  0.8756  0.8533
+
+Cap tot nhat (luoi min): {'C': 30, 'gamma': 1}
+Diem kiem dinh cheo (luoi min): 0.8756 (muc 5: 0.8711)
+Accuracy tren tap kiem tra:     0.9200 (muc 5: 0.9200)
+
+--- Cell 15 ---
+Bang nham lan 10x10 (hang la chu so that, cot la chu so doan):
+        Doan 0  Doan 1  Doan 2  Doan 3  Doan 4  Doan 5  Doan 6  Doan 7  Doan 8  Doan 9
+That 0      45       0       0       0       0       0       0       0       0       0
+That 1       0      46       0       0       0       0       0       0       0       0
+That 2       0       0      44       0       0       0       0       0       0       0
+That 3       0       0       0      46       0       0       0       0       0       0
+That 4       0       0       0       0      44       0       0       0       1       0
+That 5       0       0       0       0       0      46       0       0       0       0
+That 6       0       0       0       0       0       0      45       0       0       0
+That 7       0       0       0       0       0       0       0      44       0       1
+That 8       0       1       0       0       0       0       0       0      42       0
+That 9       0       0       0       1       0       0       0       0       0      44
+
+Cac cap chu so bi nham:
+  - Chu so that 4 bi doan nham thanh 8: 1 anh
+  - Chu so that 7 bi doan nham thanh 9: 1 anh
+  - Chu so that 8 bi doan nham thanh 1: 1 anh
+  - Chu so that 9 bi doan nham thanh 3: 1 anh
+
+Da luu: figures/bai5_anh_6_that9_doan3.png
+Da luu: figures/bai5_anh_18_that8_doan1.png
+Da luu: figures/bai5_anh_161_that4_doan8.png
+Da luu: figures/bai5_anh_428_that7_doan9.png
+[Biểu đồ hiển thị trong notebook]
+
+--- Cell 18 ---
+Trung vi thoi gian .fit (giay) sau 3 lan do:
+ n_samples  SVC_giay  LinearSVC_giay  SVC_tang_lan  LinearSVC_tang_lan
+      2000    0.0212          0.0015             -                   -
+      5000    0.1022          0.0037        4.8248              2.3639
+     10000    1.3595          0.0061       13.3009              1.6658
+     20000    3.5063          0.0125        2.5790              2.0480
+
+Ti le thoi gian khi so mau tang gap doi:
+   5000 -> 10000: SVC 13.30 lan, LinearSVC 1.67 lan
+  10000 -> 20000: SVC 2.58 lan, LinearSVC 2.05 lan
+
