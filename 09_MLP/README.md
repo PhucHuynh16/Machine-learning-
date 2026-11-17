@@ -1,11 +1,12 @@
 # Lab 09 - Mạng nơ-ron nhiều lớp (MLP)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat-square) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) ![Jupyter Notebook](https://img.shields.io/badge/Jupyter_Notebook-F37626?style=flat-square&logo=jupyter&logoColor=white)
 
-- **Môn học** Học máy ứng dụng
-- **Giảng viên biên soạn** ThS. Nguyễn Thái Anh
-- **Sinh viên** Huỳnh Hữu Phúc
-- **MSSV** 2474802010314
 
-Notebook thực hành dùng năm đoạn mã gốc ở các mục 2–6 của tài liệu `Lab09_MLP.pdf` được cung cấp riêng. Dấu gạch nối và khoảng trắng được phục hồi khi trích mã từ PDF. Notebook bài tập giải sáu bài ở mục 7. Mỗi phần có mã, kết quả đã chạy và nhận xét.
+* **Họ và tên:** Huỳnh Hữu Phúc
+* **MSSV:** 2474802010314
+* **Môn:** Học Máy Và Ứng Dụng
+* **LHP:** 261_71ITAI41203_0101
+* **GVHD:** ThS. Nguyễn Thái Anh ([GitHub](https://github.com/AnhNguyenVLU))
 
 ## Cấu trúc thư mục
 
