@@ -21,6 +21,7 @@
 | 06 | Máy vectơ hỗ trợ (SVM) | [06. SVM](06.%20SVM/README.md) |
 | 07 | Đánh giá mô hình | [07.Accuracy_Metrics](07.Accuracy_Metrics/README.md) |
 | 08 | Phân cụm K-Means | [08. K-Means](08.%20K-Means/README.md) |
+| 09 | Mạng nơ-ron nhiều lớp (MLP) | [09_MLP](09_MLP/README.md) |
 
 ## Cấu trúc
 
@@ -81,6 +82,14 @@ Machine-Learning/
 │   ├── scripts/        # run_all.py
 │   ├── README.md
 │   └── requirements.txt
+├── 09_MLP/
+│   ├── code/           # 5 bước thực hành và 6 bài tập
+│   ├── data/           # 4 bộ dữ liệu CSV
+│   ├── figures/        # Đường mất mát theo tốc độ học
+│   ├── outputs/        # Nhật ký kết quả
+│   ├── scripts/        # run_all.py
+│   ├── README.md
+│   └── requirements.txt
 └── README.md
 ```
 
@@ -88,7 +97,7 @@ Machine-Learning/
 
 ```sh
 git clone https://github.com/PhucHuynh16/Machine-learning-.git
-cd "Machine-learning-/08. K-Means"
+cd "Machine-learning-/09_MLP"
 python -m pip install -r requirements.txt
 python scripts/run_all.py
 ```

@@ -1,0 +1,16 @@
+# Dữ liệu, MLP, tối ưu L-BFGS và vẽ biểu đồ
+numpy==2.4.4
+pandas==3.0.2
+scikit-learn==1.9.0
+scipy==1.17.1
+matplotlib==3.10.9
+
+# Chạy notebook và xuất kết quả từ scripts/run_all.py
+ipython>=8.18,<10
+nbformat>=5.10,<6
+matplotlib-inline>=0.1.7,<1
+traitlets>=5.9,<6
+
+# Mở trực tiếp notebook bằng Jupyter hoặc VS Code
+notebook>=7.0,<8
+ipykernel>=6.29
