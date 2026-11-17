@@ -1,0 +1,16 @@
+# Dữ liệu, K-Means, DBSCAN và xử lý hình
+numpy==2.4.4
+pandas==3.0.2
+scikit-learn==1.9.0
+matplotlib==3.10.9
+pillow==12.3.0
+
+# Trình chạy và định dạng notebook
+ipython>=8.18,<10
+nbformat>=5.10,<6
+matplotlib-inline>=0.1.7,<1
+traitlets>=5.9,<6
+
+# Mở notebook và chọn kernel Python
+notebook>=7.0,<8
+ipykernel>=6.29

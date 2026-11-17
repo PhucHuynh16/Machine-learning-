@@ -20,6 +20,7 @@
 | 05 | Cây quyết định và Rừng ngẫu nhiên | [05. CayQuyetDinh_RungNgauNhien](05.%20CayQuyetDinh_RungNgauNhien/README.md) |
 | 06 | Máy vectơ hỗ trợ (SVM) | [06. SVM](06.%20SVM/README.md) |
 | 07 | Đánh giá mô hình | [07.Accuracy_Metrics](07.Accuracy_Metrics/README.md) |
+| 08 | Phân cụm K-Means | [08. K-Means](08.%20K-Means/README.md) |
 
 ## Cấu trúc
 
@@ -72,6 +73,14 @@ Machine-Learning/
 │   ├── scripts/        # run_all.py
 │   ├── README.md
 │   └── requirements.txt
+├── 08. K-Means/
+│   ├── code/           # 5 bước thực hành và 6 bài tập
+│   ├── data/           # khach_hang.csv, hai_vang_trang.csv
+│   ├── figures/        # Biểu đồ silhouette và ảnh nén màu
+│   ├── outputs/        # Nhật ký kết quả
+│   ├── scripts/        # run_all.py
+│   ├── README.md
+│   └── requirements.txt
 └── README.md
 ```
 
@@ -79,7 +88,7 @@ Machine-Learning/
 
 ```sh
 git clone https://github.com/PhucHuynh16/Machine-learning-.git
-cd "Machine-learning-/07.Accuracy_Metrics"
+cd "Machine-learning-/08. K-Means"
 python -m pip install -r requirements.txt
 python scripts/run_all.py
 ```

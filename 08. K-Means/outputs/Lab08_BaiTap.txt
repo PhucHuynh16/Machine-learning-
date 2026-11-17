@@ -1,0 +1,200 @@
+--- Cell mã 1 ---
+Silhouette trung bình tự tính:   0.722706
+Silhouette trung bình thư viện: 0.722706
+Khách có s nhỏ nhất: chỉ số dòng 113 (từ 0), cụm 2, tuổi 38.
+Thu nhập 25.4 triệu/tháng, điểm chi tiêu 41.
+a = 0.917758, b = 0.944750, s = 0.028571
+Khoảng cách trung bình đến cụm 0: 2.363555
+Khoảng cách trung bình đến cụm 1: 0.944750
+Khoảng cách trung bình đến cụm 3: 1.969795
+Khoảng cách trung bình đến cụm 4: 1.613442
+Đã lưu figures/silhouette_khach_hang.png
+[Hình hiển thị trong notebook]
+
+--- Cell mã 2 ---
+Silhouette khi dùng cả tuổi, thu nhập và điểm chi tiêu
+K
+2    0.3730
+3    0.4220
+4    0.4558
+5    0.4808
+6    0.4760
+7    0.4627
+8    0.4596
+9    0.4622
+10   0.4573
+
+K tốt nhất với ba biến: 5
+Silhouette hai biến, K = 5: 0.7227
+
+Hai biến (tuổi chỉ để mô tả) — tâm cụm theo đơn vị gốc, sắp theo thu nhập
+   tuoi  thu_nhap  diem_chi_tieu  so_khach
+0  24.9       7.5           80.2        35
+3  44.9       8.0           18.9        40
+2  40.4      17.4           49.3        60
+1  42.9      30.1           20.0        35
+4  32.6      30.2           81.5        40
+
+Ba biến (tuổi tham gia phân cụm) — tâm cụm theo đơn vị gốc, sắp theo thu nhập
+   tuoi  thu_nhap  diem_chi_tieu  so_khach
+0  44.9       8.0           18.9        40
+1  25.1       8.5           77.6        39
+4  41.6      17.6           49.2        57
+2  42.9      30.1           20.0        35
+3  32.1      30.3           82.0        39
+
+Số khách chung giữa cụm cũ (hàng) và cụm mới (cột)
+Cụm ba biến    0   1   2   3   4
+Cụm hai biến                    
+0              0  35   0   0   0
+1              0   0  35   0   0
+2              0   4   0   0  56
+3             40   0   0   0   0
+4              0   0   0  39   1
+ARI giữa hai cách chia: 0.9357
+
+--- Cell mã 3 ---
+Inertia sau từng lần chạy (in đến một chữ số thập phân)
+              random  k-means++
+random_state                   
+0               23.0       23.0
+1               23.0       23.0
+2               23.0       23.0
+3               84.2       23.0
+4               23.0       23.0
+5               23.0       23.0
+6               23.0       23.0
+7               73.6       23.0
+8              116.6       23.0
+9               73.7       23.0
+10              72.4       23.0
+11              84.2       23.0
+12              73.7       23.0
+13              23.0       23.0
+14              84.0       23.0
+15             118.2       23.0
+16              23.0       23.0
+17             117.4       23.0
+18              23.0       23.0
+19              23.0       23.0
+20             119.3       23.0
+21              23.0       23.0
+22              23.0       23.0
+23              23.0       23.0
+24              23.0       23.0
+25              23.0       23.0
+26              23.0       23.0
+27              23.0       23.0
+28             204.0       23.0
+29              23.0       23.0
+30              84.1       23.0
+31              23.0       23.0
+32              23.0       23.0
+33              84.1       23.0
+34              72.4       23.0
+35              23.0       23.0
+36              23.0       23.0
+37              23.0       23.0
+38              23.0       23.0
+39              23.0       23.0
+40              23.0       23.0
+41             116.6       23.0
+42              23.0       23.0
+43              73.3       23.0
+44              23.0       23.0
+45             118.2       23.0
+46             119.3       23.0
+47              23.0       23.0
+48              23.0       23.0
+49              84.9       23.0
+
+Đếm mức 23.0 theo đúng độ làm tròn ở mục 5
+random   : 30/50 đạt 23.0 (60%), min = 23.02, trung vị = 23.02, max = 204.05
+k-means++: 50/50 đạt 23.0 (100%), min = 23.02, trung vị = 23.02, max = 23.02
+
+--- Cell mã 4 ---
+Ảnh mẫu china.jpg
+Kích thước RGB: (427, 640, 3), số màu trong ảnh nén: 16
+PNG gốc: figures/anh_goc.png (550,154 byte)
+PNG nén: figures/anh_16_mau.png (134,509 byte)
+Dung lượng gốc / nén: 4.09 lần
+Sai lệch màu trung bình mỗi kênh RGB: 7.97/255
+
+Ảnh hoa mẫu
+Kích thước RGB: (427, 640, 3), số màu trong ảnh nén: 16
+PNG gốc: figures/anh_hoa_goc.png (419,413 byte)
+PNG nén: figures/anh_hoa_16_mau.png (55,634 byte)
+Dung lượng gốc / nén: 7.54 lần
+Sai lệch màu trung bình mỗi kênh RGB: 6.22/255
+
+[Hình hiển thị trong notebook]
+
+--- Cell mã 5 ---
+       Mô hình  Số cụm  Nhiễu  ARI toàn bộ  Tỷ lệ khớp hai cụm
+   K-Means K=2       2      0       0.2475              0.7500
+DBSCAN eps=0.2       1     40      -0.0014                   —
+DBSCAN eps=0.3       1     10       0.0012                   —
+DBSCAN eps=0.4       1      3      -0.0001                   —
+
+Bảng đếm giữa nhãn thật và cụm DBSCAN
+
+DBSCAN eps=0.2
+Cụm        -1    0
+Nhãn thật         
+0          19  131
+1          21  129
+
+DBSCAN eps=0.3
+Cụm        -1    0
+Nhãn thật         
+0           8  142
+1           2  148
+
+DBSCAN eps=0.4
+Cụm        -1    0
+Nhãn thật         
+0           2  148
+1           1  149
+
+--- Cell mã 6 ---
+Số ảnh: 1797, số cột pixel: 64
+Bảng đếm 10 chữ số × 10 cụm
+Cụm            0    1    2   3    4    5    6    7    8    9
+Chữ số thật                                                 
+0            176    0    0   0    0    0    2    0    0    0
+1              0  100    0  54    1    2    0    1    0   24
+2              1    8    3   2   13    0    0    0    2  148
+3              0    7    7   0  154    0    0    2   13    0
+4              0    2   11   3    0    0  165    0    0    0
+5              0    0    0   0    2    1    2  136   41    0
+6              1    3    0   0    0  177    0    0    0    0
+7              0    2  174   2    0    0    0    1    0    0
+8              0  100    5   6    2    2    0    4   52    3
+9              0    1    8  20    6    0    0    6  139    0
+
+Mức tập trung của từng chữ số vào một cụm
+             Cụm đông nhất  Số vào cụm  Tổng số ảnh  Tỷ lệ vào cụm
+Chữ số thật                                                       
+0                        0         176          178          98.9%
+6                        5         177          181          97.8%
+7                        2         174          179          97.2%
+4                        6         165          181          91.2%
+3                        4         154          183          84.2%
+2                        9         148          177          83.6%
+9                        8         139          180          77.2%
+5                        7         136          182          74.7%
+8                        1         100          174          57.5%
+1                        1         100          182          54.9%
+
+Hai chữ số xuất hiện nhiều nhất trong mỗi cụm
+Cụm 0: số 0: 176 ảnh, số 2: 1 ảnh
+Cụm 1: số 1: 100 ảnh, số 8: 100 ảnh
+Cụm 2: số 7: 174 ảnh, số 4: 11 ảnh
+Cụm 3: số 1: 54 ảnh, số 9: 20 ảnh
+Cụm 4: số 3: 154 ảnh, số 2: 13 ảnh
+Cụm 5: số 6: 177 ảnh, số 1: 2 ảnh
+Cụm 6: số 4: 165 ảnh, số 0: 2 ảnh
+Cụm 7: số 5: 136 ảnh, số 9: 6 ảnh
+Cụm 8: số 9: 139 ảnh, số 8: 52 ảnh
+Cụm 9: số 2: 148 ảnh, số 1: 24 ảnh
+
