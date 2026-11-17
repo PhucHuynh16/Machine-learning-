@@ -1,0 +1,9 @@
+# Phân tích dữ liệu, mô hình và vẽ ROC
+numpy==2.4.4
+pandas==3.0.2
+scikit-learn==1.9.0
+matplotlib==3.10.9
+
+# Mở và chạy hai notebook
+notebook>=7.0,<8
+ipykernel>=6.29
